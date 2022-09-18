@@ -11,13 +11,14 @@ class HomeScreen extends StatelessWidget {
         elevation: 0,
       ),
       body: ListView.separated(
-          itemBuilder: (context, index) => ListTile(
-                title: const Text('Nombre de Ruta'),
-                trailing: const Icon(Icons.access_time_filled_outlined),
-                onTap: () {},
-              ),
-          separatorBuilder: (_, __) => const Divider(),
-          itemCount: 10),
+        itemBuilder: (context, index) => ListTile(
+          title: const Text('Nombre de Ruta'),
+          trailing: const Icon(Icons.access_time_filled_outlined),
+          onTap: () {},
+        ),
+        separatorBuilder: (_, __) => const Divider(),
+        itemCount: 10,
+      ),
     );
   }
 }
