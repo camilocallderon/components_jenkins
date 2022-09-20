@@ -4,12 +4,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:components_flutter_3/main.dart';
 
 void main() {
-  testWidgets('Find Hello World', (WidgetTester tester) async {
+  testWidgets('Find Home Screen', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
     // Verify that our counter starts at 0.
-    expect(find.text('Hello World'), findsOneWidget);
+    expect(find.text('Home Screen'), findsOneWidget);
     expect(find.text('Hello World 1'), findsNothing);
 
     ///expect(find.text('1'), findsNothing);
