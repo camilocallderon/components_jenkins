@@ -12,6 +12,12 @@ void main() {
     expect(find.text('Home Screen'), findsOneWidget);
     expect(find.text('Hello World 1'), findsNothing);
 
+    await tester.tap(find.text('Card'));
+    await tester.pumpAndSettle();
+
+    expect(find.byKey(const Key('card-example-basic')), findsOneWidget);
+    expect(find.byType(TextButton), findsNWidgets(2));
+
     ///expect(find.text('1'), findsNothing);
     ///
     ///// Tap the '+' icon and trigger a frame.
