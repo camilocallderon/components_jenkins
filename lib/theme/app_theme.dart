@@ -8,5 +8,8 @@ class AppTheme {
       color: primary,
       elevation: 0,
     ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(primary: primary),
+    ),
   );
 }
