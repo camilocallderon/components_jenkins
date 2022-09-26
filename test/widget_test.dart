@@ -10,6 +10,7 @@ void main() {
       await tester.pumpWidget(const MyApp());
 
       expect(find.text('Home Screen'), findsOneWidget);
+      expect(find.text('Card'), findsOneWidget);
       expect(find.text('Hello World 1'), findsNothing);
     });
   });
